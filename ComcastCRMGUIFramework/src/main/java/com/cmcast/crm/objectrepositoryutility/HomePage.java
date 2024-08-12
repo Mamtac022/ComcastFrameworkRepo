@@ -26,6 +26,10 @@ public class HomePage {
 	
 	@FindBy(xpath="//img[@src='themes/softed/images/user.PNG']")
 	private WebElement adminImg;
+	
+	@FindBy(linkText="Products")
+	private WebElement productLnk;
+	
 
 		
 	public WebElement  getOrganizationlnk()
@@ -38,6 +42,11 @@ public class HomePage {
 	}
 	public WebElement getAdminImg() {
 		return adminImg;
+	}
+	
+	public WebElement getProduct()
+	{
+		return productLnk;
 	}
 	
 	public void logout(WebDriverUtility wLib) {
